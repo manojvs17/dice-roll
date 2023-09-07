@@ -10,7 +10,7 @@ function rollDice(){
     rightDiceNumber=randomNumber();
 // Result
     let total=Number(leftDiceNumber+rightDiceNumber);
-    showResult.innerHTML=`Its ${total},Move ${total} Steps Forward`;
+    showResult.innerHTML=`Its "${total}",Move ${total} Steps Forward`;
     displayImage(imageSource[leftDiceNumber-1],diceImageLeft,leftDiceDiv);
     displayImage(imageSource[rightDiceNumber-1],diceImageRight,rightDiceDiv);
 // Display Dice Image
