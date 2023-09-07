@@ -1,0 +1,81 @@
+  @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Bricolage+Grotesque:opsz,wght@10..48,500&display=swap');
+*{
+    font-family: 'Bebas Neue', sans-serif;
+    font-family: 'Bricolage Grotesque', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+body{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+                                        /* container design */
+.container{
+    background:lightcoral;
+    height: fit-content;
+    width: fit-content;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    /* border: 30px solid black;
+    border-radius: 20px; */
+}
+                                        /* designing heading part */
+.headingContainer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.headingContainer>h1{
+    
+    font-size: 3em;
+}
+
+.headingContainer>button{
+    
+    font-size: 2em;
+    margin: .4em;
+    padding: 0px 10px;
+    border-radius: 10px;
+}
+                                        /* designing result part */
+.resultContainer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+#diceResult{
+    font-size: 2em;
+}
+                                            /* designing the result animation */
+.diceAnimation{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+#left-dice,#right-dice{
+    margin: 1em 2em;
+    border-radius: 10px;
+    box-shadow: inset 0 0 0 15px;
+    height: 200px;
+    width: 200px;
+    background-color: antiquewhite;
+}
+#left-dice>img,#right-dice>img{
+    display: none;
+    height: inherit;
+    width: inherit;
+}
+.rotate{
+    animation: rotate 400ms linear;
+}
+@keyframes rotate{
+    0%{rotate: 0deg;}
+    100%{transform:rotate3d(1,1,1,360deg);}
+
+}
