@@ -1,4 +1,4 @@
-let imageSource=['/diceimg/1.png','/diceimg/2.png','/diceimg/3.png','/diceimg/4.png','/diceimg/5.png','/diceimg/6.png']
+let imageSource=['./diceimg/1.png','./diceimg/2.png','./diceimg/3.png','./diceimg/4.png','./diceimg/5.png','./diceimg/6.png']
 let diceImageLeft=document.getElementById('left-dice-image');
 let diceImageRight=document.getElementById('right-dice-image');
 let leftDiceDiv=document.getElementById('left-dice');
