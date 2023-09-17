@@ -133,3 +133,19 @@ body{
   transform: translateY(0%);
   box-shadow: 0 0;
 }
+
+@media screen and (max-width:650px) {
+    #left-dice,#right-dice{
+        height: 100px;
+        width: 100px;
+    }
+    .headingContainer>h1{
+        font-size: 2em;
+    }
+    .headingContainer>p{
+        font-size: 1.2em;
+    }
+    #diceResult{
+        font-size: 1.3em;
+    }
+}
